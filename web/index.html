@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculator Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Calculator Lab</h1>
+        <br>
+        <form name="recForm" id="recForm" method="POST" action="calculatorController">
+            <input type="hidden" name="shape" value="rectangle"/>
+            <label class="label">Length</label>
+            <input name="rectangleLength" id="rectangleLength" value="" placeholder="Enter Length"/>
+            <label class="label">Width</label>
+            <input name="rectangleWidth" id="rectangleWidth" value="" placeholder="Enter Width"/>
+            <input type="submit" name="submit" value="Get Area"/>
+        </form>
+        <br>
+        <form name="circleForm" id="circleForm" method="POST" action="calculatorController">
+            <input type="hidden" name="shape" value="circle"/>
+            <label class="label">Radius</label>
+            <input name="circleRadius" id="circleRadius" value="" placeholder="Enter Radius"/>
+            <input type="submit" name="submit" value="Get Area"/>
+        </form>
+    </body>
+</html>
